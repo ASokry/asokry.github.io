@@ -1,0 +1,175 @@
+/*For all*/
+body {
+  margin: auto;
+}
+
+
+/*For Logo and Nav Menu*/
+@media screen and (min-width: 600px) {
+	.menu {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+	 	grid-auto-rows: 1fr;
+	  	grid-gap: 1rem;
+	  	grid-auto-flow: dense;
+	}
+
+	.button {
+		font-family: Avenir, Heveltica, Arial, san-serif;
+		text-decoration: none;
+		font-size: 140%;
+		color: #000;
+	}
+
+	.button:hover {
+		border-radius: 200px;
+		background-color: #000;
+		/*font-style: italic;*/
+		color: #fff;
+	}
+}
+
+/*.menu {
+	border-bottom: 1px solid black;
+}*/
+
+.menu a {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+.button {
+	font-family: Avenir, Heveltica, Arial, san-serif;
+	text-decoration: none;
+	font-size: 140%;
+	color: #000;
+}
+
+.button:hover {
+	border-radius: 200px;
+	background-color: #000;
+	color: #fff;
+}
+
+hr {
+	margin: 0.5em 5% 2em;
+	border: solid black;
+	border-width: 1px;
+	/*width: 500px;*/
+}
+
+
+/*For grid that controls placement of banners,contents,etc.*/
+@media screen and (min-width: 600px) {
+	.grid {
+		margin: 1em 0em;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+	 	grid-auto-rows: 1fr;
+	  	grid-gap: 1rem;
+	  	/*grid-auto-flow: dense;*/
+	}
+
+	div:nth-child(1) {
+		grid-row: span 2;
+	}
+
+	div:nth-child(2){
+		grid-row: span 2;
+		grid-column: span 2;
+	}
+}
+
+.grid {
+	margin: 1em 0em;
+}
+
+
+/*For Banners*/
+/*Left banner not in use*/
+.leftBanner {
+	border-right: solid black;
+	/*Wont work for some reason*/
+	/*background-image: url("img/powerupOG.png");*/
+}
+
+.rightBanner {
+	border-left: solid black;
+	margin: 0em 0em 0em 1em;
+	padding: auto;
+}
+
+/*Not in use but good experience*/
+/*#leftCanvas {
+	display: block;
+	border: solid black;
+	width: 90%;
+
+	Original size
+	width: 398.4px;
+	height: 279.533px;
+
+	margin-left: auto;
+ 	margin-right: auto;
+}*/
+
+#bannerImage1, #bannerImage2 {
+	width: 50%;
+	height: auto;
+	display: block;
+	border: solid black;
+ 	margin: auto;
+ 	padding: auto;
+ 	/*Wont work for some reason*/
+	/*background-image: url("img/powerupOG.png");*/
+
+ 	/*Use only if screen has a long scroll*/
+ 	/*position: sticky;
+	top: 20px;*/
+}
+
+.description {
+	text-align: center;
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+
+
+/*For Content*/
+.content {
+	margin: 0em 3em;
+	padding: auto;
+	/*width: 60%;*/
+	/*background-color: #000;*/
+	/*height: fit-content;*/
+	text-align: center;
+}
+
+.content a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 0.5em 0em;
+	border-bottom: dotted;
+	font-size: 120%; 
+}
+
+.lastContent {
+	border-style: hidden !important;
+}
+
+.content a:hover {
+	background-color: lightgrey;
+}
+
+
+/*For CopyRight*/
+.copyRight {
+	border: 1px solid black;
+	text-align: center;
+	font-size: 80%;
+	margin-top: 1em;
+	padding: 2em;
+}
