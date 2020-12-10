@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6b30bc; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4C1499; 
+}
+
+#navar {
+	padding: 8px 20px;
+	box-shadow: 0 1px 5px rgba(0,0,2,.23);
+	background-color: #ffffff;
+}
+
+#navar-img {
+	padding: 5px;
+}
+
+#navar-as {
+	height: 100%;
+	width: auto;
+}
+
+.icon-bar {
+	background-color: #222222;
+}
+
+#navar-ul a {
+	font-size: 18px;
+	color: #222222;
+	font-family: 'Share Tech', sans-serif;
+}
+
+#navar-ul a:hover {	
+	color: #6b30bc;
+	font-weight: bold;
+	background-color: transparent;
+}
+
+#about {
+	margin-top: 15vh;
+}
+
+.img-col img {
+	width: 100%;
+	height: auto;
+}
+
+.img-col-links {
+	text-align: center;
+}
+
+.img-col-links a {
+	color: #6b30bc;
+	text-decoration: none;
+	padding: 0 5px;
+	position: relative;
+	top: 1px;
+    display: inline-block;
+}
+
+.img-col-links a:hover {
+	color: #222222;
+	transform: translateY(-3px);
+}
+
+.about-greet {
+	color: #6b30bc;
+	font-family: 'Share Tech', sans-serif;
+	position: relative;
+}
+
+.about-greet span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+}
+
+.about-greet span hr {
+	border-color: #6b30bc;
+	border-width: 3px;
+}
+
+.about-col p {
+	font-family: 'Castoro', serif;
+	font-size: 18px;
+	color: #222;
+}
+
+.about-documents {
+	text-align: right;
+	font-size: 18px;
+	position: relative;
+	margin-top: 3em;
+}
+
+.about-documents a {
+	padding: 5px 10px;
+	border: solid;
+	text-decoration: none;
+	color: #6b30bc;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.about-documents a:hover {
+	border: solid #6b30bc;
+	background-color: #6b30bc;
+	color: #fff;
+}
+
+.about-documents span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+}
+
+.about-documents span hr {
+	border-color: #6b30bc;
+	border-width: 3px;
+}
+
+.hobbies {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 50vw; 
+}
+
+.hobbies .row {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.title-card {
+	min-height: 40vh;
+	border: solid #222;
+	border-radius: 10px;
+	padding: 15px 20px;
+	position: relative;
+	text-align: center;
+}
+
+.title-card .hobby-title {
+	font-family: 'Share Tech', sans-serif;
+	color: #6b30bc;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.hobby {
+	min-height: 40vh;
+	/*max-height: 40vh;*/
+	border: double #6b30bc;
+	border-radius: 10px;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.hobby-title {
+	color: #222;
+	margin-top: 0;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.hobby p {
+	font-family: 'Castoro', serif;
+	font-size: 14px;
+	color: #222;
+	/*max-height: 30vh;
+	overflow: scroll;*/
+}
+
+.hobby hr {
+	width: 80%;
+	border-color: #222;
+	border-style: dashed;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.goals {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.goals h3 {
+	font-family: 'Share Tech', sans-serif;
+	color: #6b30bc;
+}
+
+.technical-goals ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-family: 'Castoro', serif;
+	font-size: 14px;
+	color: #222;
+}
+
+.technical-goals {
+	border-left: solid #222;
+}
+
+.personal-goals {
+	text-align: right;
+	border-right: solid #222;
+}
+
+.personal-goals ul {
+	list-style-type: none;
+	font-family: 'Castoro', serif;
+	font-size: 14px;
+	color: #222;
+}
+
+#footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#footer p {
+	font-family: 'Castoro', serif;
+	max-width: 130px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	border-bottom: dotted;
+	border-width: 8px;
+}
+
+.footer-tags {
+	margin-top: 10px;
+}
+
+.footer-tags a {
+	color: #6b30bc;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.img-col {
+		width: 100%;
+		height: auto;
+	}
+
+	.hobbies {
+		max-width: 60vw;
+	}
+
+	.hobbies .col-sm-4 {
+		margin-top: 25px;
+	}
+}
