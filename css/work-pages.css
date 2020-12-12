@@ -84,6 +84,7 @@
 
 .work-tags b {
 	/*color: #6b30bc;*/
+	display: inline-block;
 	padding: 8px;
 }
 
@@ -130,11 +131,10 @@
 
 .project-links {
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	transform: translateY(50%);
+}
+
+.project-links hr {
+	border-color: #222;
 }
 
 .project-links a {
@@ -169,18 +169,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.img-col {
-		height: 208px;
-		overflow: hidden;
-	}
-	
-	.web-left {
-		position: relative;
-		visibility: visible;
-	}
-
-	.web-right {
-		position: absolute;
-		visibility: hidden;
+	#body .col-sm-6 {
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
 }
