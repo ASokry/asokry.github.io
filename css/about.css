@@ -62,24 +62,6 @@
 	height: auto;
 }
 
-.img-col-links {
-	text-align: center;
-}
-
-.img-col-links a {
-	color: #6b30bc;
-	text-decoration: none;
-	padding: 0 5px;
-	position: relative;
-	top: 1px;
-    display: inline-block;
-}
-
-.img-col-links a:hover {
-	color: #222222;
-	transform: translateY(-3px);
-}
-
 .about-greet {
 	color: #6b30bc;
 	font-family: 'Share Tech', sans-serif;
