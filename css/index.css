@@ -54,7 +54,7 @@
 }
 
 #hero {
-	height: 100vh;
+	height: 90vh;
 	position: relative;
 }
 
@@ -62,7 +62,7 @@
 	margin: 0 auto;
     left: 0;
     right: 0;
-    margin-top: 40vh;
+    margin-top: 38vh;
 }
 
 .hero-greet {
