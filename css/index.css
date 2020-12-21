@@ -75,24 +75,27 @@
 	text-align: center;
 	color: #222;
 	font-family: 'Share Tech', sans-serif;
+	margin-bottom: 25px;
 }
 
-.hero-icons {
+.hero-request {
 	text-align: center;
+	font-size: 18px;
+	/*position: relative;*/
 }
 
-.hero-icons a {
-	color: #6b30bc;
+.hero-request a {
+	padding: 5px 10px;
+	border: solid;
 	text-decoration: none;
-	padding: 0 10px;
-	position: relative;
-	top: 1px;
-    display: inline-block;
+	color: #6b30bc;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
-.hero-icons a:hover {
-	color: #222;
-	transform: translateY(-3px);
+.hero-request a:hover {
+	border: solid #6b30bc;
+	background-color: #6b30bc;
+	color: #fff;
 }
 
 #body {
@@ -192,7 +195,15 @@
 .footer-tags a {
 	color: #6b30bc;
 	padding: 0 10px;
+	position: relative;
 	text-decoration: none;
+	top: 1px;
+    display: inline-block;
+}
+
+.footer-tags a:hover {
+	color: #222;
+	transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 600px) {

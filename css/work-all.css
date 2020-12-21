@@ -75,9 +75,24 @@ html {
     margin: 2em auto;
 }
 
+.body-category {
+	margin-bottom: 18em;
+}
+
+.body-category-name {
+	font-family: 'Share Tech', sans-serif;
+	border-left: dashed #6b30bc;
+	padding-left: 10px;
+}
+
 .img-col img {
 	max-width: 100%;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.work-date {
+	margin-top: 3px;
+	text-align: right;
 }
 
 .text-col p {
@@ -146,7 +161,15 @@ html {
 .footer-tags a {
 	color: #6b30bc;
 	padding: 0 10px;
+	position: relative;
 	text-decoration: none;
+	top: 1px;
+    display: inline-block;
+}
+
+.footer-tags a:hover {
+	color: #222;
+	transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 600px) {

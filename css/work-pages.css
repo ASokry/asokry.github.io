@@ -165,7 +165,15 @@
 .footer-tags a {
 	color: #6b30bc;
 	padding: 0 10px;
+	position: relative;
 	text-decoration: none;
+	top: 1px;
+    display: inline-block;
+}
+
+.footer-tags a:hover {
+	color: #222;
+	transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 600px) {

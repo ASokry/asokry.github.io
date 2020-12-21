@@ -87,14 +87,14 @@
 	color: #222;
 }
 
-.about-documents {
+.about-request {
 	text-align: right;
 	font-size: 18px;
 	position: relative;
 	margin-top: 3em;
 }
 
-.about-documents a {
+.about-request a {
 	padding: 5px 10px;
 	border: solid;
 	text-decoration: none;
@@ -102,13 +102,13 @@
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-.about-documents a:hover {
+.about-request a:hover {
 	border: solid #6b30bc;
 	background-color: #6b30bc;
 	color: #fff;
 }
 
-.about-documents span {
+.about-request span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -116,7 +116,7 @@
 	width: 50%;
 }
 
-.about-documents span hr {
+.about-request span hr {
 	border-color: #6b30bc;
 	border-width: 3px;
 }
@@ -241,10 +241,22 @@
 .footer-tags a {
 	color: #6b30bc;
 	padding: 0 10px;
+	position: relative;
 	text-decoration: none;
+	top: 1px;
+    display: inline-block;
+}
+
+.footer-tags a:hover {
+	color: #222;
+	transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 600px) {
+	::-webkit-scrollbar {
+	  width: 3px;
+	}
+
 	.img-col {
 		width: 100%;
 		height: auto;
@@ -256,5 +268,10 @@
 
 	.hobbies .col-sm-4 {
 		margin-top: 25px;
+	}
+
+	.hobby p {
+		max-height: 240px;
+		overflow: scroll;
 	}
 }
