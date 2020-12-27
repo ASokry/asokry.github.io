@@ -68,12 +68,14 @@
 .hero-greet {
 	text-align: center;
 	color: #6b30bc;
+	font-size: 40px;
 	font-family: 'Share Tech', sans-serif;
 }
 
 .hero-role {
 	text-align: center;
 	color: #222;
+	font-size: 30px;
 	font-family: 'Share Tech', sans-serif;
 	margin-bottom: 25px;
 }
@@ -81,10 +83,10 @@
 .hero-request {
 	text-align: center;
 	font-size: 18px;
-	/*position: relative;*/
+	position: relative;
 }
 
-.hero-request a {
+.hero-request .resume {
 	padding: 5px 10px;
 	border: solid;
 	text-decoration: none;
@@ -92,10 +94,27 @@
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-.hero-request a:hover {
+.hero-request .resume:hover {
 	border: solid #6b30bc;
 	background-color: #6b30bc;
 	color: #fff;
+}
+
+.hero-request .icon {
+	border: none;
+	padding: 0 45px;
+	font-size: 20px;
+	color: #6b30bc;
+	position: relative;
+	top: 1px;
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.hero-request .icon:hover {
+	color: #222;
+	transform: translateY(-3px);
 }
 
 #body {
@@ -117,8 +136,12 @@
 }
 
 .recent-work-title {
-	color: #6b30bc;
 	font-family: 'Nunito Sans', sans-serif;
+}
+
+.recent-work-title a {
+	text-decoration: none;
+	color: #6b30bc;
 }
 
 .recent-code, .recent-game {
@@ -185,7 +208,8 @@
 	margin-bottom: 0;
 	padding-bottom: 5px;
 	border-bottom: dotted;
-	border-width: 8px;
+	border-width: 6px;
+	font-size: 16px;
 }
 
 .footer-tags {
@@ -199,6 +223,7 @@
 	text-decoration: none;
 	top: 1px;
     display: inline-block;
+    font-size: 28px;
 }
 
 .footer-tags a:hover {

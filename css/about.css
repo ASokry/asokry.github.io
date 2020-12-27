@@ -231,7 +231,8 @@
 	margin-bottom: 0;
 	padding-bottom: 5px;
 	border-bottom: dotted;
-	border-width: 8px;
+	border-width: 6px;
+	font-size: 16px;
 }
 
 .footer-tags {
@@ -245,6 +246,7 @@
 	text-decoration: none;
 	top: 1px;
     display: inline-block;
+    font-size: 28px;
 }
 
 .footer-tags a:hover {

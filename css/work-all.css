@@ -105,6 +105,10 @@ html {
 .work-title {
 	margin-top: 0;
 	padding-top: 10px;
+}
+
+.work-title a {
+	text-decoration: none;
 	color: #6b30bc;
 }
 
@@ -151,7 +155,8 @@ html {
 	margin-bottom: 0;
 	padding-bottom: 5px;
 	border-bottom: dotted;
-	border-width: 8px;
+	border-width: 6px;
+	font-size: 16px;
 }
 
 .footer-tags {
@@ -165,6 +170,7 @@ html {
 	text-decoration: none;
 	top: 1px;
     display: inline-block;
+    font-size: 28px;
 }
 
 .footer-tags a:hover {

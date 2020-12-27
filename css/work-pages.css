@@ -96,9 +96,10 @@
 }
 
 .work-head {
-	color: #6b30bc;
+	color: #222;
+	/*font-weight: bold;*/
 	font-family: 'Share Tech', sans-serif;
-	/*border-bottom: solid;*/
+	border-bottom: solid;
 }
 
 .work-subhead {
@@ -155,7 +156,8 @@
 	margin-bottom: 0;
 	padding-bottom: 5px;
 	border-bottom: dotted;
-	border-width: 8px;
+	border-width: 6px;
+	font-size: 16px;
 }
 
 .footer-tags {
@@ -169,6 +171,7 @@
 	text-decoration: none;
 	top: 1px;
     display: inline-block;
+    font-size: 28px;
 }
 
 .footer-tags a:hover {
