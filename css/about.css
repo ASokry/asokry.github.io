@@ -2,6 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 
+/* ---- reset ---- */ 
+body{ margin:0; } 
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+	position:absolute; 
+	width: 100%;
+	 /*height will need to be adjusted for each page*/
+	height: 150%; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: 50% 50%; 
+	z-index: -1000;
+} 
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -139,6 +154,7 @@
 	padding: 15px 20px;
 	position: relative;
 	text-align: center;
+	background-color: #fff;
 }
 
 .title-card .hobby-title {
@@ -158,6 +174,7 @@
 	border-radius: 10px;
 	padding: 15px 20px;
 	position: relative;
+	background-color: #fff;
 }
 
 .hobby-title {
@@ -255,8 +272,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+	#particles-js{ 
+		 /*height will need to be adjusted for each page*/
+		height: 390%; 
+	}
+
 	::-webkit-scrollbar {
-	  width: 3px;
+		width: 3px;
 	}
 
 	.img-col {
