@@ -10,7 +10,7 @@ body{ margin:0; }
 	position:absolute; 
 	width: 100%;
 	 /*height will need to be adjusted for each page*/
-	height: 150%; 
+	height: 145%; 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: 50% 50%; 
@@ -139,12 +139,28 @@ body{ margin:0; }
 .hobbies {
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 50vw; 
+	/*max-width: 50vw; */
 }
 
-.hobbies .row {
-	margin-top: 30px;
-	margin-bottom: 30px;
+.hobbies-start-line, .hobbies-end-line {
+	position: relative;
+	color: #6b30bc;
+	font-family: 'Share Tech', sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.hobbies-start-line span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+}
+
+.hobbies-start-line span hr, .hobbies-end-line span hr {
+	border-color: #6b30bc;
+	border-width: 3px;
 }
 
 .title-card {
@@ -168,9 +184,9 @@ body{ margin:0; }
 }
 
 .hobby {
-	min-height: 40vh;
+	/*min-height: 40vh;*/
 	/*max-height: 40vh;*/
-	border: double #6b30bc;
+	/*border: double #6b30bc;*/
 	border-radius: 10px;
 	padding: 15px 20px;
 	position: relative;
@@ -185,54 +201,24 @@ body{ margin:0; }
 
 .hobby p {
 	font-family: 'Castoro', serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #222;
 	/*max-height: 30vh;
 	overflow: scroll;*/
 }
 
+.hobby p::-webkit-scrollbar {
+	width: 3px;
+}
+
 .hobby hr {
-	width: 80%;
+	width: 90%;
 	border-color: #222;
 	border-style: dashed;
-	position: absolute;
+/*	position: absolute;
 	bottom: 0;
 	left: 0;
-	right: 0;
-}
-
-.goals {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-.goals h3 {
-	font-family: 'Share Tech', sans-serif;
-	color: #6b30bc;
-}
-
-.technical-goals ul {
-	list-style-type: none;
-	padding-left: 0;
-	font-family: 'Castoro', serif;
-	font-size: 14px;
-	color: #222;
-}
-
-.technical-goals {
-	border-left: solid #222;
-}
-
-.personal-goals {
-	text-align: right;
-	border-right: solid #222;
-}
-
-.personal-goals ul {
-	list-style-type: none;
-	font-family: 'Castoro', serif;
-	font-size: 14px;
-	color: #222;
+	right: 0;*/
 }
 
 #footer {
@@ -274,7 +260,7 @@ body{ margin:0; }
 @media only screen and (max-width: 600px) {
 	#particles-js{ 
 		 /*height will need to be adjusted for each page*/
-		height: 390%; 
+		height: 340%; 
 	}
 
 	::-webkit-scrollbar {
@@ -286,16 +272,7 @@ body{ margin:0; }
 		height: auto;
 	}
 
-	.hobbies {
-		max-width: 60vw;
-	}
-
 	.hobbies .col-sm-4 {
 		margin-top: 25px;
-	}
-
-	.hobby p {
-		max-height: 240px;
-		overflow: scroll;
 	}
 }

@@ -117,13 +117,12 @@ body{ margin:0; }
 
 .hero-request .icon {
 	border: none;
-	padding: 0 45px;
-	font-size: 20px;
+	padding: 0 25px;
 	color: #6b30bc;
 	position: relative;
 	top: 1px;
     display: inline-block;
-    font-size: 24px;
+    font-size: 35px;
     text-decoration: none;
 }
 
@@ -250,12 +249,6 @@ body{ margin:0; }
 	#particles-js{ 
 		 /*height will need to be adjusted for each page*/
 		height: 230%; 
-	}
-
-	.hero-request .icon {
-		display: block;
-		margin-bottom: 10px;
-		margin-top: 15px;
 	}
 
 	.text-col-button {
