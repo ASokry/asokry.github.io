@@ -10,7 +10,7 @@ body{ margin:0; }
 	position:absolute; 
 	width: 100%;
 	 /*height will need to be adjusted for each page*/
-	height: 145%; 
+	height: 95%; 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: 50% 50%; 
@@ -70,6 +70,10 @@ body{ margin:0; }
 
 #about {
 	padding-top: 15vh;
+}
+
+.img-col {
+	text-align: center;
 }
 
 .img-col img {

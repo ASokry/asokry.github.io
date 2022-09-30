@@ -111,7 +111,7 @@ body{ margin:0; }
 
 .work-date {
 	margin-top: 3px;
-	text-align: right;
+	text-align: left;
 }
 
 .text-col p {
@@ -170,18 +170,6 @@ body{ margin:0; }
 #footer {
 	margin-top: 50px;
 	text-align: center;
-}
-
-#footer p {
-	font-family: 'Castoro', serif;
-	max-width: 130px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0;
-	padding-bottom: 5px;
-	border-bottom: dotted;
-	border-width: 6px;
-	font-size: 16px;
 }
 
 .footer-tags {
