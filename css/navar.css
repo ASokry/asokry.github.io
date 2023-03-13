@@ -1,0 +1,34 @@
+html {
+	scroll-behavior: smooth;
+}
+
+#navar {
+	padding: 8px 20px;
+	box-shadow: 0 1px 5px rgba(0,0,2,.23);
+	background-color: #ffffff;
+}
+
+#navar-img {
+	padding: 5px;
+}
+
+#navar-as {
+	height: 100%;
+	width: auto;
+}
+
+.icon-bar {
+	background-color: #222222;
+}
+
+#navar-ul a {
+	font-size: 18px;
+	color: #222222;
+	font-family: 'Share Tech', sans-serif;
+}
+
+#navar-ul a:hover {	
+	color: #6b30bc;
+	font-weight: bold;
+	background-color: transparent;
+}

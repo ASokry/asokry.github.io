@@ -25,37 +25,6 @@ body{ margin:0; }
   background: #4C1499; 
 }
 
-#navar {
-	padding: 8px 20px;
-	box-shadow: 0 1px 5px rgba(0,0,2,.23);
-	background-color: #ffffff;
-}
-
-#navar-img {
-	padding: 5px;
-}
-
-#navar-as {
-	height: 100%;
-	width: auto;
-}
-
-.icon-bar {
-	background-color: #222222;
-}
-
-#navar-ul a {
-	font-size: 18px;
-	color: #222222;
-	font-family: 'Share Tech', sans-serif;
-}
-
-#navar-ul a:hover {	
-	color: #6b30bc;
-	font-weight: bold;
-	background-color: transparent;
-}
-
 #body {
 	min-height: 100vh;
 	position: relative;
@@ -144,30 +113,6 @@ body{ margin:0; }
 .project-links a {
 	color: #6b30bc;
 	font-family: 'Nunito Sans', sans-serif;
-}
-
-#footer {
-	margin-top: 10em;
-	text-align: center;
-}
-
-.footer-tags {
-	margin-top: 10px;
-}
-
-.footer-tags a {
-	color: #6b30bc;
-	padding: 0 10px;
-	position: relative;
-	text-decoration: none;
-	top: 1px;
-    display: inline-block;
-    font-size: 28px;
-}
-
-.footer-tags a:hover {
-	color: #222;
-	transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 600px) {

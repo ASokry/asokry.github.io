@@ -1,0 +1,45 @@
+#contact {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#contact > .h2-head {
+	font-family: 'Share Tech', sans-serif;
+	text-align: center;
+	color: #6b30bc;
+	color: #222;
+}
+
+/* .contact-tags {
+	margin-top: 10px;
+} */
+
+.contact-tags a {
+	color: #6b30bc;
+	padding: 0 10px;
+	position: relative;
+	text-decoration: none;
+	top: 1px;
+    display: inline-block;
+    font-size: 28px;
+}
+
+.contact-tags-text {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 18px;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 90px;
+}
+
+.contact-tags a:hover {
+	color: #222;
+	transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 600px) {
+	.contact-tags a {
+		height: 80px;
+	}
+}

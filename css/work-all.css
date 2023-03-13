@@ -104,21 +104,21 @@ body{ margin:0; }
 	padding-left: 10px;
 }
 
-.img-col img {
+.body-work > .img-col img {
 	max-width: 100%;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.body-work > .text-col p {
+	font-family: 'Castoro', serif;
+	color: #222;
+	font-size: 16px;
+	margin-bottom: 25px;
 }
 
 .work-date {
 	margin-top: 3px;
 	text-align: left;
-}
-
-.text-col p {
-	font-family: 'Castoro', serif;
-	color: #222;
-	font-size: 16px;
-	margin-bottom: 25px;
 }
 
 .work-title {
