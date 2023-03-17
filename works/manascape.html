@@ -33,7 +33,7 @@
 			position:absolute; 
 			width: 100%;
 			 /*height will need to be adjusted for each page*/
-			height: 170%; 
+			height: 225%; 
 			background-repeat: no-repeat; 
 			background-size: cover; 
 			background-position: 50% 50%; 
@@ -43,7 +43,7 @@
 		@media only screen and (max-width: 600px) {
 			#particles-js{ 
 				 /*height will need to be adjusted for each page*/
-				height: 160%; 
+				height: 430%; 
 			}
 		}
 	</style>
@@ -82,11 +82,11 @@
 			<div class="row">
 				<div class="col-sm-6 description-col">
 					<h2 class="work-subhead">Overview</h2>
-					Game submission for GameMaker's Toolkit Game Jam 2022. For 3 days, I Collaborated with a friend on Unity in developing Manascape(Mana + Escape) while using Git and GitHub for version control. Using C#, I programmed the core gameplay mechanics and scene management system. 
+					Game submission for GameMaker's Toolkit Game Jam 2022. For 3 days, I Collaborated with a friend in developing Manascape(Mana + Escape) using Unity. I programmed the core gameplay in C# while using Git and GitHub for version control. I wrote the code for (1)player movement, (2)item behavior, (3)mana spawning system, (4)zone portal system, and (5)scene management. 
 					<br><br>
-					The gameplay consists of (1)moving the player around the screen with slippery properties, (2)colliding with items such as health potions to heal or mana points to collect enough of them and create an "exit" portal to beat the game, (3)entering "normal" portals to move onto the next area before time runs out within the current area, and (4)avoiding enemies that try to collide with the player which would cause a loss of health and drop some of the player's mana. 
+					<p class="view"><a href="https://mrpergerson.itch.io/manascape" target="_blank">visit itch.io page</a></p>
 					<br>
-					<p class="view"><a href="https://mrpergerson.itch.io/manascape" target="_blank">itch.io page</a></p>
+					The player movement script uses Rigidbody 2D physics and the new Unity Input system where the player would provide a vector value, via key press, which is then used to calculate a desired velocity which in turn moves the player sprite with a given speed and acceleration. The slippery movement is in effect when the player provides a different vector value; the current velocity would then change/lerp to the newly calculated velocity. 
 				</div>
 				<div class="col-sm-6 img-col">
 					<img src="../img/pages/manascape.png">
@@ -95,13 +95,25 @@
 			<br><br>
 			<div class="row">
 				<div class="col-sm-6 description-col">
-					The player movement script uses Rigidbody 2D physics and the new Unity Input system where the player would provide a vector value, via key press, which is then used to calculate a desired velocity which in turn moves the player sprite with a given speed and acceleration. The slippery movement is in effect when the player provides a different vector value; the current velocity would then change/lerp to the newly calculated velocity. 
+					Mana points and health potions have 2D collider components that are used in collision detections with the player, where object-specific methods are triggered using the built in "OnTriggerEnter2D" methods. Colliding with mana points increases the number of mana the player has by 1 and colliding with health potions increases the player's health up 1. In addition, if the player collects enough mana points, they can   an "exit" portal object via another key press which upon entering/colliding will take the player to victory screen and, in turn, beat the game. 
 					<br><br>
-					Mana points and health potions have 2D collider components that are used in collision detections with the player, where object-specific methods are triggered using the built in "OnTriggerEnter2D" methods. Colliding with mana points increases the number of mana the player has by 1 and colliding with health potions increases the player's health up 1. In addition, if the player collects enough mana points, they can   an "exit" portal object via another key press which upon entering/colliding will take the player to victory screen and, in turn, beat the game.
+					Each area within the game has a set amount of mana that can be collected as well as a "normal" portal that spawns after a given amount of time has passed. Mana are separated into 3 different types, valuing at 1 point, 5 points, and 10 points respectively. The mana spawning system is given a hard-coded mana progression chart that details the combined total amount of mana that should spawn within each zone. The system will break down the total number into appropriate sums using the different mana values (ie 18 total mana = 5 + 5 + 5 + 1 + 1 + 1) with the goal of having a balanced amount of mana objects to spawn. Once the mana values are decided, the system will proceed to institate them individually with a set amount of time in between.
 					<br><br>
-					Each area within the game has a set amount of mana points that can be collected as well as a "normal" portal that spawns after a given amount of time has passed. The area itself also has a timer where the walls of the screen begin to close in towards the center. If the timer would reach 0 then the player would be trapped in the area forever and lose the game. Entering the "normal" portals is the only way to move onto the next areas where the player can collect more mana points with the added risk of encountering enemies.
+					The zones themselves have a timer where the walls of the screen begin to close in towards the center. If the timer would reach 0 then the zone would collapse and the player would be trapped in the zone forever and lose the game. "Normal" portals are set to spawn a few seconds before the zone collapses; entering the "normal" portals is the only way to move onto the next zone where the player can collect more mana points, including high value mana, with the added risk of encountering enemies. If enough mana points are acquired, the player can create an "exit" portal via "SpaceBar" keypress and escape; thus beating the game.
+					<br><br>
+					The scene management system features a single persistent scene and a single scene that will change throughout the game. Portals will take players to new zones, but in reality the scene is simply resetting with new amounts of items and enemies to spawn. There is one exception where if the player enters the portal at a certain time, they will enter a wild zone which is a separate scene entirely that has higher amounts of enemies and items to spawn. There are 6 unique scenes in the Unity build:
+					<ul>
+						<li>A persistent scene that houses the game systems and managers that maintains and supports the game flow; this scene remains loaded at all times</li>
+						<li>A start scene that contains the main menu</li>
+						<li>A normal zone scene that is reused to simulate different zone levels by spawning different amounts of enemies and items per zone/level</li>
+						<li>A wild zone scene where higher amounts of enemies and items spawn</li>
+						<li>A win scene for when the player wins</li>
+						<li>A lose scene for when the player loses</li>
+					</ul>
 				</div>
 				<div class="col-sm-6 img-col">
+					<img src="../img/pages/manascape-zone.png" alt>
+					<br><br>
 					<img src="../img/pages/manascape-art.png" alt>
 				</div>
 			</div>
