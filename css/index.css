@@ -280,6 +280,10 @@ body{ margin:0; }
 		height: 354%; 
 	}
 
+	.hero-request .icon {
+		height: 80px;
+	}
+
 	.text-col-button {
 		display: inline-block;
 		margin: 5px;
